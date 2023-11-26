@@ -53,7 +53,7 @@ const Portfolio = () => {
       <div className="gallery">
         {imageFiles.map((image, index) => (
           <div key={index} className="image-container" onClick={() => openModal(index)}>
-            <img src={process.env.PUBLIC_URL + `/images/${image.fileName}`} alt={`Photo ${index + 1}`} />
+            <img src={process.env.PUBLIC_URL + `/images/${image.fileName}`} alt={`Portfolio Item ${index + 1}`} />
           </div>
         ))}
       </div>
